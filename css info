@@ -1,0 +1,20 @@
+<div class="parent clearfix">
+  <div class="left fl">
+
+  </div>
+  <div class="right fl">
+
+  </div>
+</div>
+
+.fl{
+  float: left;
+}
+
+.left, .right{
+  width: 50%;
+  min-height: 100px;
+}
+.clearfix{
+  overflow: hidden;
+}

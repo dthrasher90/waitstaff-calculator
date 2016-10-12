@@ -1,0 +1,106 @@
+body{
+
+  font-family: monospace;
+  font-size: 22px;
+}
+
+.header {
+
+  height: 100px;
+  width:  100%;
+  font-size: 58px;
+  text-align: center;
+  clear: both;
+
+}
+
+
+.parentWrapper{
+
+width: 100%;
+
+}
+
+.fl{
+  float: left;
+}
+
+.fr{
+  float: right;
+}
+
+
+.clearfix{
+  overflow: hidden;
+}
+
+#mealInfo{
+  height: 800px;
+  width:  50%;
+
+}
+
+h2{
+  font-size: 18px;
+  text-align: center;
+  border: 3px solid black;
+
+}
+
+h3{
+
+  font-size: 14px;
+}
+
+.mealinfoForm{
+
+  font-size: 22px;
+  width: 100%;
+}
+
+form, p, label {
+
+float: left;
+width: 100%;
+font-size: 18px
+}
+
+
+.mealInfoTitle, .earningsInfotitle, .customerChargestitle{
+
+  text-align: center;
+  height: 30px;
+  width: 100%;
+  border-bottom: 3px solid black;
+
+}
+
+.earningsInfotitle{
+
+  border-top: 3px solid black;
+}
+
+.leftSide, .rightSide{
+
+  height: 800px;
+  width: 48%;
+  border: 3px solid black;
+}
+
+
+
+#customerCharges{
+
+
+  min-height: 400px;
+  width: 98%
+  
+
+}
+
+#earningsInfo{
+
+  height: 200px;
+  width: 98%;
+  background-color: gold;
+}
