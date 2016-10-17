@@ -2,6 +2,7 @@ body{
 
   font-family: monospace;
   font-size: 22px;
+  background-color: slategrey;
 }
 
 .header {
@@ -11,9 +12,9 @@ body{
   font-size: 58px;
   text-align: center;
   clear: both;
+  background-color: slateblue;
 
 }
-
 
 .parentWrapper{
 
@@ -62,7 +63,7 @@ form, p, label {
 
 float: left;
 width: 100%;
-font-size: 18px
+font-size: 14px;
 }
 
 
@@ -82,25 +83,23 @@ font-size: 18px
 
 .leftSide, .rightSide{
 
-  height: 800px;
+  height: 500px;
   width: 48%;
   border: 3px solid black;
+  font-size: 14px;
+  background-color: mintcream;
 }
 
 
 
 #customerCharges{
-
-
-  min-height: 400px;
-  width: 98%
-  
-
+  min-height: 200px;
+  width: 98%;
 }
 
 #earningsInfo{
 
   height: 200px;
   width: 98%;
-  background-color: gold;
+
 }

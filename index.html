@@ -17,66 +17,65 @@
     <div class= "leftSide fl">
 
           <div class="mealInfoTitle"> enter meal information </div>
-            <form ng-submit= submitMeal() class="mealinfoForm" method="post">
+            <form ng-submit= submitMeal(mealsinfoForm) class="mealinfoForm" method="post">
 
               <p>
               <label>  Base Meale Price:  $ </label>
-              <input type="text">
-             </p>
+              <input type="text" class="basemealPrice" ng-model="mealsinfoForm.basemealPrice">
+
+              </p>
 
               <p>
               <label>  Tax Rate:  % </label>
-              <input type="text">
+              <input type="text" class="taxRate" ng-model="mealsinfoForm.taxRate">
+
               </p>
 
               <p>
               <label>  Tip Percentage:  % </label>
-              <input type="text">
+              <input type="text" class="tipPercentage" ng-model="mealsinfoForm.tipPercentage">
+
               </p>
 
-                <button id="mealInfoBtn" onclick="submitMeal()">Submit</button>
-
+              <button id="mealInfoBtn" type="submit">Submit</button>
             </form>
           </div>
 
 
 <div class="rightSide fr clearfix">
+
   <div id="customerCharges">
-    <div class="customerChargestitle">
+
 
         <div class="customerChargestitle"> customer charges </div>
 
-      <form ng-submit="submitCharges()" class="customerChargesForm" method="post">
-
-        <p>
-        <label>  Subtotal:  $ </label>
-        <input type="text">
-        </p>
-        <p>
-       <label>  Tip:  $ </label>
-       <input type="text">
-        </p>
-
-        <p>
-       <label> Total:  $ </label>
-       <input type="text">
-      </p>
-    </form>
-    <button id="customerChargesBtn" onclick="submitCharges()"> Submit </button>
+            <form ng-submit="submitCharges(field)" class="customerChargesForm" method="post">
+            <p>  <label>  Subtotal:  $ </label> {{subTotal}} </P>
+            <p>  <label>  Tip:  $ </label> {{tips}} </p>
+            <p>   <label> Total:  $ </label> {{total}} </p>
+            </form>
 
 
    </div>
-    </div>
     <div id= "earningsInfo">
-        <div class= "earningsInfotitle"> earnings info
-      </div>
+        <div class= "earningsInfotitle"> earnings info</div>
 
+        <label> Tip Total:  $ </label>
+
+
+        <p>
+       <label>  Meal Count:  </label>
+
+        </p>
+
+        <p>
+       <label> Average Tip Per Meal:  $  </label>
+        </p>
     </div>
-</div>
-</div>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+</div>
+</div>
+</div>
   </body>
 </html>
